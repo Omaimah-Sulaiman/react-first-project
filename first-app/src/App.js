@@ -9,7 +9,7 @@ class App extends React.Component{
     
     return (
       <div >
-        <h1>hi</h1>
+     
         <Header/>
         <Main/>
         <Footer/>
