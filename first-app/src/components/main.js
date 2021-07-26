@@ -3,17 +3,21 @@ import HornedBeasts from "./HornedBeasts"
 // import Data from "../data/data.json"
 
 class Main extends React.Component{
-    constructor(props){
-        super(props);
-        // console.log(Data.data[0].title)
-        this.state={ }
+    // constructor(props){
+    //     super(props);
+    //     console.log(Data.data[0].title)
+    //     this.state={
+    //         voite:0
+    //      }
         
 
-    }
+    // }
     render(){
         return( 
         <div>
-                    <HornedBeasts
+                    <HornedBeasts />
+
+                    {/* <HornedBeasts
                         // title= {this.state.Data.data.title}
                         image_url="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
                         title= "UniWhal"
@@ -46,7 +50,7 @@ class Main extends React.Component{
                 description ="A narwhal is basically a unicorn after all, right?"
                 keyword ="narwhal"
                 horns ='1 '/>
-                
+                 */}
                 {/* <HornedBeast
                 "image_url": "https://i.pinimg.com/originals/16/cf/2a/16cf2a0b3fd51b9bee08bb6296193b75.jpg",
                 "title": "#truth",
