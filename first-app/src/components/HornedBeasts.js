@@ -29,25 +29,20 @@ class HornedBeasts extends React.Component{
             console.log(item.title);
                 
            return  <div CardColumns>
-              
-              <Row xs={1} md={2} className="g-4">
-               <Card style={{ width: '18rem' }}>
-                <Card.Img onClick={this.whenClickImg} src={item.image_url} alt="" width="500" height="400" />
-                <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>
-                    {item.description}
-                    </Card.Text>
-                    <p>the voites : {this.state.voite}</p>
-                </Card.Body>
-                </Card>
-                </Row>
-              
-                {/* <h2>{item.title}</h2>
-                <p>{item.description}</p>
-                <img onClick={this.whenClickImg} src={item.image_url} alt="" width="500" height="400"></img>
-                <p>the voites : {this.state.voite}</p> */}
-             </div>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img onClick={this.whenClickImg} src={item.image_url} alt="" />
+                            <Card.Body>
+                                <Card.Title>{item.title}</Card.Title>
+                                <Card.Text>
+                                {item.description}
+                                </Card.Text>
+                                <p>the voites : {this.state.voite}</p>
+                            </Card.Body>
+                            </Card>
+                        
+                            <br></br>
+                    
+                   </div>
         });
         return( 
         <div>
