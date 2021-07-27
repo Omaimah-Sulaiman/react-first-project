@@ -10,13 +10,15 @@ class Main extends React.Component{
     render(){
         const listItems =this.props.data.map((item) =>{
                 
+          
             return (
                 <HornedBeasts
             
              title={item.title}
              description={item.description}
              image_url={item.image_url}
-            
+            //  whenClick={this.props.whenClick}
+            //  voite={this.props.voite}
             
                 />
             );
