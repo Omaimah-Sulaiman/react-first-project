@@ -18,8 +18,8 @@ class HornedBeasts extends React.Component{
           });
         }
     
-    
         render(){
+          // {console.log(this.props.voite)};
         
           return ( <div>
             <Col>
