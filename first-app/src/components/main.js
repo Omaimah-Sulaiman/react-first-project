@@ -1,7 +1,6 @@
 import React from "react";
 import HornedBeasts from "./HornedBeasts";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Data from "../data/data.json";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -9,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 class Main extends React.Component{
    
     render(){
-        const listItems = Data.map((item) =>{
+        const listItems =this.props.data.map((item) =>{
                 
             return (
                 <HornedBeasts
