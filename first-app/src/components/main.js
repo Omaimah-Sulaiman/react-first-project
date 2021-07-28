@@ -17,8 +17,8 @@ class Main extends React.Component{
              title={item.title}
              description={item.description}
              image_url={item.image_url}
-            //  whenClick={this.props.whenClick}
-            //  voite={this.props.voite}
+             updateShow={this.props.updateShow}
+              modalInfo={this.props.modalInfo}
             
                 />
             );
