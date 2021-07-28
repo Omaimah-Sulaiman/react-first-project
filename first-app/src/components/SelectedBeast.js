@@ -11,7 +11,9 @@ class SelectedBeast extends React.Component{
            
 
             <Modal  show={this.props.show} onClick={this.props.updateShow}>
-            <Modal.Img  variant="top" src={this.props.url} onClick={this.props.updateShow}/>
+            
+            <img  variant="top" src={this.props.image_url } onClick={this.props.updateShow}></img>
+            <Modal.Img  variant="top" src={this.props.image_url } onClick={this.props.updateShow}/>
             <Modal.Title>{this.props.title}</Modal.Title>
             <Modal.Body> {this.props.description}</Modal.Body>
             <Button variant="danger" onClick={this.props.updateShow} > close</Button>

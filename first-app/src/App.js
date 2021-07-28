@@ -51,7 +51,7 @@ class App extends React.Component{
           show={this.state.show}
           title={this.state.title}
           url={this.state.url}
-          ddescriptiones={this.state.description}
+          descriptiones={this.state.description}
           updateShow={this.updateShow}
           modalInfo={this.modalInfo}
 
