@@ -48,11 +48,10 @@ class App extends React.Component{
    
         />
         <SelectedBeast
-          visible={this.state.visible}
+          show={this.state.show}
           title={this.state.title}
           url={this.state.url}
-          des={this.state.description}
-          count={this.state.count}
+          ddescriptiones={this.state.description}
           updateShow={this.updateShow}
           modalInfo={this.modalInfo}
 
