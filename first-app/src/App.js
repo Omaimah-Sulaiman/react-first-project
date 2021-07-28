@@ -6,20 +6,35 @@ import SelectedBeast from "./components/SelectedBeast";
 import Data from "./data/data.json";
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={
-      Data,
-      voite:0}
-  }
-  whenClickImg =() =>{
-    this.setState({
-      voite:this.state.voite +1
 
-
-    });
-  }
-
+    constructor(props) {
+      super(props);
+      this.state = {
+        Data,
+        show: false,
+        title: null,
+        url: null,
+        description: null,
+    
+      };
+    }
+  
+    modalInfo = (title,description, url) => {
+      this.setState({
+        title: title,
+        url: url,
+        description: description,
+       
+      });
+    };
+  
+    updateShow= () =>  {
+      this.setState({
+          show : !this.state.show
+      });
+    }
+    
+  
   render(){
     
     return (
@@ -28,11 +43,20 @@ class App extends React.Component{
         <Header/>
         <Main
         data={this.state.Data}
-        whenClick={this.whenClickImg}
-        voite={this.state.voite}
+        updateShow={this.updateShow}
+        modalInfo={this.modalInfo}
+   
         />
-        <SelectedBeast 
-        data={this.state.Data}
+        <SelectedBeast
+          visible={this.state.visible}
+          title={this.state.title}
+          url={this.state.url}
+          des={this.state.description}
+          count={this.state.count}
+          updateShow={this.updateShow}
+          modalInfo={this.modalInfo}
+
+          
         />
         <Footer/>
       </div>

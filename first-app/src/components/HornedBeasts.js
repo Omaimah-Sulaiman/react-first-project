@@ -15,8 +15,28 @@ class HornedBeasts extends React.Component{
           this.setState({
             voite:this.state.voite +1
 
+        
+
           });
+          this.props.updateShow();
+          this.props.modalInfo(
+            this.props.title,
+            this.props.description,
+            this.props.url,
+            this.state.count,)
+        
+          
         }
+        // cardView =() =>{
+        //   this.props.updateVisible();
+        //   this.props.modalData(
+        //     this.props.title,
+        //     this.props.des,
+        //     this.props.url,
+        //     this.state.count,
+        
+        //   );
+        // }
     
         render(){
           // {console.log(this.props.voite)};
