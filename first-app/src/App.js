@@ -18,6 +18,14 @@ class App extends React.Component{
     
       };
     }
+
+    selectNumberOfHorns=()=>{
+     const selectHorns= Data.map((value) =>{
+        if(Data.horns==='1'){
+          return value;
+        }
+      })
+    }
   
     modalInfo = (title,description, url) => {
       this.setState({
